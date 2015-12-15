@@ -3,25 +3,27 @@ a {
   text-align: center;
   font-family: verdana;
   color: black;
-}
-
-a:hover {
   font-weight: bold;
 }
 
+a:hover {
+  font-weight: normal;
+}
+
 h1 {
-  text-align: center;
+  text-align: left;
   font-family: Verdana;
 }
 
 p {
-  text-align: center;
+  text-align: left;
   font-family: Verdana;
 }
 
 nav {
   text-align: center;
   font-size: 20px;
+  word-spacing: 3em;
 }
 
 article p {
@@ -30,4 +32,10 @@ article p {
 
 footer p {
   text-align: center;
+}
+
+.topnav {
+  text-align: right;
+  font-weight: bold;
+  font-family: Verdana;
 }
