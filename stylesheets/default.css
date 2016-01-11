@@ -23,7 +23,7 @@ p {
 nav {
   text-align: center;
   font-size: 20px;
-  word-spacing: 3em;
+word-spacing: 2em;
 }
 
 article p {
@@ -37,5 +37,9 @@ footer p {
 .topnav {
   text-align: right;
   font-weight: bold;
+  font-family: Verdana;
+}
+
+ul {
   font-family: Verdana;
 }
