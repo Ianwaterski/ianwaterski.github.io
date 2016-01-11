@@ -1,0 +1,72 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+
+    <link type ="text/css" rel="stylesheet" href="../stylesheets/default.css"/>
+
+    <meta charset="utf-8">
+
+    <title>Technical Blog</title>
+
+    <meta name="description" content="blog template">
+
+    <meta name="author" content="Ian Wudarski">
+
+  </head>
+
+
+
+  <body>
+
+    <!-- social media nav -->
+    <div class="topnav">
+      <a href="#">Twitter</a> <a href="https://www.facebook.com/ianwudarski?ref=bookmarks">Facebook</a> <a href="mailto: eeinwud@gmail.com">Email</a> <a href="https://github.com/Ianwaterski">Github </a>
+    </div>
+
+    <p><img src="../imgs/dice.jpg" width="200" height ="200" alt="Logo">
+
+
+    <!-- blog post -->
+    <h1> Enumerable Method Man </h1>
+
+    <hr />
+
+    <p>This week I had the opportunity to scour over the the ruby docs and text through an insane amount of enumerable methods.  A new and wonderul kind of method that opened a world of possiblities.  Let me explain.
+    </br></br>
+    An Enumerable method, as defined by the <em>Well Grounded Rubyist</em>, is a method that enters a sort of contract with with the class that defines it.  It says that <blockquote>"the class has to define an instance method called each, and in return, Enumerable endows the objects of the class with all sorts of collection based behaviors."</blockquote>
+    <p>Sounds pretty awesome right? But what does that mean to the average coder who's still researching how to read the rubydocs?  In my definition it means something like this, when you have a collection of items enumerable offers you a whole slew of new methods you can use on that collection in order to get the data you need.  So with that in mind that leads us to one of my favorites.
+    </p></br>
+    <h1> find_all </h1>
+    <p> The find_all method returns a new collection containing all the elements of the original collection that meet a criteria in the code block.  If nothing in the original collection meets the criteria, find_all returns an empty object.  So if you find_all on an array you should get back a new array with the criteria meeting collection inside. Pretty nifty eh?  Check out an example:</br>
+
+      <blockquote>array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+      </br>array.find_all {|number| number > 5}
+      </br> [6, 7, 8, 9, 10]
+      </blockquote>
+
+    <p> So as you can see in this example it takes the array of number 1-10, and searches the array for all numbers > 5.  When something in the array matches those criteria it returns a new array with those values assigned to it.</br>
+    As you can see find_all can be a very powerful collection based method to use going forward.  Especially when you're looking to isolate specific values in an array.  Happy coding!</p>
+
+
+
+    <hr />
+
+
+
+    <!-- whole footer -->
+    <nav>
+      <a href="http://ianwaterski.github.io/blog-index.html">Blog</a>
+      <a href="http://ianwaterski.github.io/">Portfolio</a>
+      <a href="#">Contact</a></br></br>
+    </nav>
+
+
+    <footer>
+      <p>Legal info in footer will appear here. Questions?: <a href="mailto:eeinwud@gmail.com">Ian Wudarski</a></p>
+
+
+
+  </body>
+</html>
+
