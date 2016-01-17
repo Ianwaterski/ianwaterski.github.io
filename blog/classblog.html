@@ -1,0 +1,85 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+
+    <link type ="text/css" rel="stylesheet" href="../stylesheets/default.css"/>
+
+    <meta charset="utf-8">
+
+    <title>High Class Sass</title>
+
+    <meta name="description" content="blog template">
+
+    <meta name="author" content="Ian Wudarski">
+
+  </head>
+
+
+
+  <body>
+
+    <!-- social media nav -->
+    <div class="topnav">
+      <a href="#">Twitter</a> <a href="https://www.facebook.com/ianwudarski?ref=bookmarks">Facebook</a> <a href="mailto: eeinwud@gmail.com">Email</a> <a href="https://github.com/Ianwaterski">Github </a>
+    </div>
+
+    <p><img src="../imgs/dice.jpg" width="200" height ="200" alt="Logo">
+
+
+    <!-- blog post -->
+    <h1> High "Class" Sass </h1>
+
+    <hr />
+
+    <p> Just when you thought Ruby may yield and be slightly easier, boy were you wrong!  Classes for sure make things easier, but not without taking their fair share of your patience.</br></br>
+
+    The best way for me to explain what classes in Ruby are is to use an analogy.  Imagine that classes are a car.  The entire car is made up of many parts, wheels, an engine, and fuel.  All of these things make up what a car is and they all have their own specific tasks.  The same can be said for a Ruby class.  The class has an overall purpose, but is only achieved by using all the parts in side of the car.  </br></br>
+
+    The individual parts of the car can be used to describe methods in a class.  Each method has a specific job to do, for example the wheels.  It is worth noting now that it is best practice to have one method do one thing, much like the wheels do one thing.  Classes are designed to pull together many smaller tasks to achieve one big task.  Much like a car is the assembly of all its smaller parts in order to move people, a class is an assembly of all its smaller methods in order to achieve the goal of the class.</br></br>
+
+      <!-- Ruby class example -->
+      <blockquote><pre>
+          class Die
+            def initialize(sides)
+                raise ArgumentError, "Die must have 1 side" unless sides > 1
+              @sides = sides
+            end
+
+            def sides
+              @sides
+            end
+
+            def roll
+              @roll = rand(@sides) + 1
+              return @roll
+            end
+          end
+      </blockquote></pre>
+
+    <p> So this is a simple class I had constructed earlier this week.  It looks complicated but lets work through line by line. From the top the name of this Class is Die.  It is meant to simulate a die roll.  When you intialize this code in IRB, new_die(6) = Die.new, it runs through the initialize method immediately.  Since "def initialize(sides)" has side in parantheses is accepts an argument of how many sides, the argument error on the next line is to ensure that the right number of sides is input.</br></br>
+
+    We then establish the beautiful instance variable @sides!  Instance variables are wonderful because they can be used anywhere within this class.  Meaning the number of sides is known to all parts, as we can see in def roll.  It is calling @sides that we defined when we intialized.  By doing this we save ourselves time but not having to define variables repeatedly while we're coding.  So within the @roll method we define a simple way to simulate the die roll of rand(@sides)+1.  Rand does exactly what it looks like and takes a random range from 0 to the number of sides, since 0 can't be an answer we add 1 to account for it.
+    </p>
+
+
+    <hr />
+
+
+
+    <!-- whole footer -->
+    <nav>
+      <a href="http://ianwaterski.github.io/blog-index.html">Blog</a>
+      <a href="http://ianwaterski.github.io/">Portfolio</a>
+      <a href="http://ianwaterski.github.io/contacts.html">Contact</a>
+    </nav>
+
+
+    <footer>
+      <p>Legal info in footer will appear here. Questions?: <a href="mailto:eeinwud@gmail.com">Ian Wudarski</a></p>
+
+
+
+  </body>
+</html>
+
