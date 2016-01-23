@@ -1,0 +1,82 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+
+    <link type ="text/css" rel="stylesheet" href="../stylesheets/default.css"/>
+
+    <meta charset="utf-8">
+
+    <title>Javascript Party!</title>
+
+    <meta name="description" content="blog template">
+
+    <meta name="author" content="Ian Wudarski">
+
+  </head>
+
+
+
+  <body>
+
+    <!-- social media nav -->
+    <div class="topnav">
+      <a href="#">Twitter</a> <a href="https://www.facebook.com/ianwudarski?ref=bookmarks">Facebook</a> <a href="mailto: eeinwud@gmail.com">Email</a> <a href="https://github.com/Ianwaterski">Github </a>
+    </div>
+
+    <p><img src="../imgs/dice.jpg" width="200" height ="200" alt="Logo">
+
+
+    <!-- blog post -->
+    <h1> How I learned to miss Ruby, and hate semicolons </h1>
+
+    <hr />
+
+    <p> Through the final week of Ruby I couldn't wait to move on to something new.  Ruby had really fried my brain and for a change of pace I was ready for something new.  Enter JavaScript.  Boy was I excited; a new language! </br></br>Everything started out well, I picked it up fairly easily, and thought everything was great.  Then came time for some actual challenges and all I wanted to do was look through RubyDocs for some built-in methods.  I never thought I could miss those terrible descriptions, but boy do I. </br></br>
+    Take this with a grain of salt though, there are many similarities in JS.  Iteration is basically the same despite the abscence of the .each method like in Ruby.  Loops are written out much more literally, using counters:
+
+        <blockquote><pre>
+          for (var counter = 0; counter <= 10; counter++) {
+            if (counter % 3 === 0)
+              console.log("Fizz");
+            else if (counter % 5 === 0)
+              console.log("Buzz");
+            else
+              console.log(counter);
+          }
+        </pre></blockquote>
+
+    <p> In this loop you can see after 'for' we declare a counter, give it a boundary in which to run, when counter <= 10, and then increase counter by 1 each time.  Clunky, but it works.  There's better refactoring that can be done to ultimately make it more readable, but this is essentially the same thing that .each does except more verbose.  Which seems to be the general theme with JS documentation compared to Ruby.</br></br>
+
+    Documentation in general is similar in a bunch of ways though.  To the point where someone like me who has minimal experience with both was constantly getting confused between which methods work in what ways.  With arrays, using methods like .index(i) in Ruby would return you that index value, while in JS it is .indexOf(i);.  Instead of .slice in Ruby it's .splice in JS.  As you can see the similarities are there, but it isn't all that beneficial in these cases.</br></br>
+
+    The biggest differences for me and also the biggest headaches often came because of misplaced semicolons or braces. <strong>MY GOODNESS THE SEMICOLONS</strong>.  Ruby is so much cleaner in this aspect, you dont need to worry about ending each line with a ';' and wrapping each loop in {}.  Remember your 'end' in Ruby and you're sound as a pound, but forget a semicolon in JS and enjoy your proofreading of code for however long it takes you to find out where it's missing.  Even the error messages are not much help, often just something like "Hey you forgot something, it's somewhere in your code". Unlike in Ruby where it will at least give you a line number where to start.  Javascript definitely seemed easier to pick up because of how literal it can be, but once you get into more challenging projects, the literalness of JS becomes a burden.  Ruby I take back all the mean things I said, I miss you.
+
+    </p>
+
+
+    <hr />
+
+
+
+    <!-- whole footer -->
+    <nav>
+      <a href="http://ianwaterski.github.io/blog-index.html">Blog</a>
+      <a href="http://ianwaterski.github.io/">Portfolio</a>
+      <a href="http://ianwaterski.github.io/contacts.html">Contact</a>
+      <a href="http://ianwaterski.github.io/bio.html">About</a>
+      <a href="http://ianwaterski.github.io/projects/index.html">Projects</a>
+    </br>
+
+    </nav>
+
+
+
+    <footer>
+      <p>Legal info in footer will appear here. Questions?: <a href="mailto:eeinwud@gmail.com">Ian Wudarski</a></p>
+
+
+
+  </body>
+</html>
+
