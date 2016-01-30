@@ -51,13 +51,16 @@ li {
 }
 
 table {
-  border-style: solid;
+  width: 600px;
   font-family: Verdana;
+  border-bottom: 1px solid gray;
 }
 
 th {
   font-weight: bold;
   padding: 5px;
+  border-bottom: 2px solid black;
+  border-top: 1px solid gray;
 }
 
 tbody {
@@ -66,4 +69,8 @@ tbody {
 
 td {
   padding: 5px;
+}
+
+tr.even{
+  background-color: #efefef;
 }

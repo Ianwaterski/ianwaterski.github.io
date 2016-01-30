@@ -28,28 +28,25 @@
 
 
     <!-- blog post -->
-    <h1> Cheat Sheet </h1>
+    <h1> Ruby Enumerable Cheat Sheet </h1>
 
 
     <!-- table structure -->
-    <table border = '1px'>
+    <table>
 
-        <thead>
           <tr>
             <th> List of Methods </th>
             <th> Method Description </th>
           </tr>
-        </thead>
 
-        <tbody>
-          <tr>
+          <tr class ='even'>
             <td>#each</td>
             <td>each {|a| …}</br> Yields all elements. </td>
           </tr>
             <td>#each_with_index</td>
             <td>each_with_index {|a, b|...}</br>
                 Yields all elements and indexes</td>
-          </tr>
+          <tr class ='even'>
             <td>#include?(value)</td>
             <td>Returns true if any element == value</td>
           </tr>
@@ -60,7 +57,7 @@
                 a.sort => ["a", "b", "c", "d", "e"]</br>
                 a.sort{|x,y| y <=> x } => ["e", "d", "c", "b", "a"]
             </td>
-          </tr>
+          <tr class ='even'>
             <td>#flatten!(level)</br>
                 #flatten
             </td>
@@ -78,10 +75,31 @@
                 a.map! {|x| x + "!" }</br>
                 a = ["a!", "b!", "c!"]
             </td>
-      </table>
+          <tr class ='even'>
+            <td>#reverse</br>
+                #reverse!
+            </td>
+            <td>Reverse given array destructively or non-destructively.</br></br>
+                a = ['a', 'b', 'c']</br>
+                a.reverse => ['c', 'b', 'a']</br>
+                a = ['a', 'b' 'c']</br></br>
+
+                a = ['a', 'b', 'c']</br>
+                a.reverse! => ['c', 'b', 'a']</br>
+                a = ['c', 'b', 'a']</br>
+            </td>
+          </tr>
+            <td>#select{|item| block}</td>
+            <td>Returns a new array containing all elements of array</br>
+                for which the given block returns a true value.</br></br>
+
+                [1,2,3,4,5].select {|num| num.even?} => [2,4]
+            </td>
+
+      </table></br></br>
 
 
-    <hr />
+
 
 
 
