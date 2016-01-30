@@ -7,7 +7,7 @@
 
     <meta charset="utf-8">
 
-    <title>Technical Blog</title>
+    <title>Cheat Sheet</title>
 
     <meta name="description" content="blog template">
 
@@ -28,13 +28,57 @@
 
 
     <!-- blog post -->
-    <h1> Blog Title </h1>
+    <h1> Cheat Sheet </h1>
 
-    <hr />
 
-    <p> Blog text will go here akjsdfl;jaoiansf'ojf </br>
-        liajsdlfkjaslfjsafd;oijasdfl;jasgoasodgihajgh </br>
-    </p>
+    <!-- table structure -->
+    <table border = '1px'>
+
+        <thead>
+          <tr>
+            <th> List of Methods </th>
+            <th> Method Description </th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>#each</td>
+            <td>each {|a| …}</br> Yields all elements. </td>
+          </tr>
+            <td>#each_with_index</td>
+            <td>each_with_index {|a, b|...}</br>
+                Yields all elements and indexes</td>
+          </tr>
+            <td>#include?(value)</td>
+            <td>Returns true if any element == value</td>
+          </tr>
+            <td>#sort</td>
+            <td>sort{|a, b|...}</br>
+                Returns array sorted by <=> operator or by block.</br></br>
+                a = ["d", "a", "e", "c", "b"]</br>
+                a.sort => ["a", "b", "c", "d", "e"]</br>
+                a.sort{|x,y| y <=> x } => ["e", "d", "c", "b", "a"]
+            </td>
+          </tr>
+            <td>#flatten!(level)</br>
+                #flatten
+            </td>
+            <td>Destructive method that pushes nested arrays into one array.</br></br>
+                a = [1,2,[3,4],5,[6,[7,8]]] </br>
+                a.flatten! = [1,2,3,4,5,6,7,8]</br>
+                a.flatten!(1) = [1,2,3,4,5,[6,[7,8]]]
+            </td>
+          </tr>
+            <td>#map!{|item| block}</br>
+                #map
+            </td>
+            <td>Invokes the given block once for each element of self,</br>replacing  the element with the value returned by the block.</br></br>
+                a = [ "a", "b", "c"]</br>
+                a.map! {|x| x + "!" }</br>
+                a = ["a!", "b!", "c!"]
+            </td>
+      </table>
 
 
     <hr />
