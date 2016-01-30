@@ -49,3 +49,21 @@ blockquote {
 li {
   font-family: Verdana;
 }
+
+table {
+  border-style: solid;
+  font-family: Verdana;
+}
+
+th {
+  font-weight: bold;
+  padding: 5px;
+}
+
+tbody {
+  font-weight: normal;
+}
+
+td {
+  padding: 5px;
+}
