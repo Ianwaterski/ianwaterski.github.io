@@ -1,8 +1,35 @@
+body {
+    background-image: url(../imgs/wallpaper.png);
+    background-size: cover;
+    color: white;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+#container {
+  min-height:100%;
+  position: relative;
+}
+
+#footer {
+  position:absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 100px;
+  font-family: verdana;
+  font-size: .5em;
+  color: white;
+}
+
 a {
   text-decoration: none;
   text-align: center;
   font-family: verdana;
-  color: black;
+  color: white;
   font-weight: bold;
 }
 
@@ -10,9 +37,15 @@ a:hover {
   font-weight: normal;
 }
 
-h1 {
+#header {
   text-align: left;
   font-family: Verdana;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 70px;
+  color: white;
+  font-size: 2em;
+  font-weight: bold;
 }
 
 p {
@@ -30,16 +63,17 @@ article p {
   text-align: left;
 }
 
-footer p {
-  text-align: center;
-  word-spacing: 1em;
-
-}
-
 .topnav {
-  text-align: right;
-  font-weight: bold;
-  font-family: Verdana;
+  position:absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 65px;
+  font-family: verdana;
+  font-size: 1em;
+  color: white;
 }
 
 blockquote {
@@ -50,6 +84,8 @@ li {
   font-family: Verdana;
 }
 
+
+/* Table CSS */
 table {
   width: 600px;
   font-family: Verdana;
