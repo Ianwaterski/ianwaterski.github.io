@@ -49,6 +49,12 @@ a:hover {
   font-weight: normal;
 }
 
+article {
+  position: absolute;
+  text-align: center;
+  vertical-align: middle;
+}
+
 #header {
   text-align: left;
   font-family: Verdana;
