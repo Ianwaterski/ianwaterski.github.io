@@ -103,7 +103,7 @@ li {
   font-family: Verdana;
 }
 
-#contacts{
+#contacts {
   position:absolute;
   top: 270px;
   width: 100%;
@@ -113,7 +113,6 @@ li {
   line-height: 20px;
   font-family: verdana;
   color: white;
-
 }
 
 /* Table CSS */
