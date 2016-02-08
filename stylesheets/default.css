@@ -139,5 +139,5 @@ td {
 }
 
 tr.even{
-  background-color: #d8c4a4;
+  background-color: rgba(216,196,164, .5);
 }
