@@ -121,6 +121,7 @@ table {
   width: 600px;
   font-family: Verdana;
   border-bottom: 1px solid gray;
+  vertical-align: middle;
 }
 
 th {
@@ -139,5 +140,5 @@ td {
 }
 
 tr.even{
-  background-color: #efefef;
+  background-color: #d8c4a4;
 }
